@@ -1,0 +1,174 @@
+body {
+    background-color: hsl(27, 66%, 92%);
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 17vh 0;
+}
+
+
+/* ////// HEADER ////// */
+
+.header-div {
+    display: flex;
+    background-color: hsl(10, 79%, 65%);
+    width: 30em;
+    border-radius: 10px;
+    color: white;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    width: 50%;
+    gap: 4px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.header {
+    margin: 0;
+}
+
+.header-img {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 30px;
+    width: 50%;
+}
+
+.header-img > img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* /////////////////////// */
+
+
+/* ///// Main Box ///// */
+.main-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 10px;
+    width: 30em;
+}
+
+.graph-header {
+    padding-left: 30px;
+}
+
+.graph {
+    display: flex;
+    margin: 0px 30px;
+    height: 13.5em;
+    border-bottom: 1px solid hsl(28, 10%, 53%, 0.3);
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.test {
+    width: 40px;
+    text-align: center;
+}
+
+.date {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.money {
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    height: 200px;
+    position: relative;
+}
+
+
+
+
+/* Tooltip text */
+.money .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: relative;
+    bottom: 15%;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .money:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
+
+
+.money > p {
+    margin: 0;
+}
+
+.graph, .footer-left, .footer-right > p {
+    color: hsl(28, 10%, 53%);
+}
+
+
+
+/* /////////////////////////// */
+
+
+
+/* ///// Footer ///// */
+
+
+.footer {
+    margin: 0px 30px;
+    padding-bottom: 2.5em;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.footer-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.text {
+    margin: 0;
+}
