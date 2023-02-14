@@ -43,8 +43,11 @@ const data = [
     }
   ]
 
+/////////////////////////////////
 
-console.log(data[4].day);
-
+///// Logic for inputting Amount spent data /////
+for (let i = 1; i < data.length + 1; i++ ) {
+    document.getElementById(i).querySelector("p.tooltiptext").innerHTML = data[i-1].amount;
+}
 
 /////////////////////////////////
