@@ -33,7 +33,7 @@ const data = [
     },
     {
       "day": "wed",
-      "amount": 352.36
+      "amount": 52.36
     },
     {
       "day": "thu",
@@ -53,12 +53,21 @@ const data = [
     }
   ]
 
+  let totalAmount = 0;
+  
 /////////////////////////////////
 
 ///// Logic for inputting Amount spent data /////
 for (let i = 1; i < data.length + 1; i++ ) {
     document.getElementById(i).querySelector("p.tooltiptext").innerHTML = "$" + data[i-1].amount;
     document.getElementById(i).style.height = data[i-1].amount * 2+"px"
-}
+
+    // changes total for month but just adds the weekly data
+    totalAmount += data[i-1].amount;
+    console.log(totalAmount);
+        
+};
 
 /////////////////////////////////
+
+document.getElementById("total").innerHTML = "$" + totalAmount;
