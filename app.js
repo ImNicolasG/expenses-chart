@@ -1,12 +1,22 @@
 
 
-///// make todays day blue /////
+///// make todays day blue and change opacity /////
 
 const newDay = new Date();
 
 let todaysDay = newDay.getDay();
 
 document.getElementById(String(todaysDay)).style.backgroundColor = "hsl(186, 34%, 60%)";
+
+function lowerOpacity() {
+    document.getElementById(String(todaysDay)).style.backgroundColor = "hsl(186, 34%, 60%, 0.75)";
+}
+function increaseOpacity() {
+    document.getElementById(String(todaysDay)).style.backgroundColor = "hsl(186, 34%, 60%)";   
+}
+
+document.getElementById(String(todaysDay)).setAttribute("onmouseover", "lowerOpacity()");
+document.getElementById(String(todaysDay)).setAttribute("onmouseout", "increaseOpacity()");
 
 ///////////////////////////
 
@@ -47,7 +57,8 @@ const data = [
 
 ///// Logic for inputting Amount spent data /////
 for (let i = 1; i < data.length + 1; i++ ) {
-    document.getElementById(i).querySelector("p.tooltiptext").innerHTML = data[i-1].amount;
+    document.getElementById(i).querySelector("p.tooltiptext").innerHTML = "$" + data[i-1].amount;
+    document.getElementById(i).style.height = data[i-1].amount * 2+"px"
 }
 
 /////////////////////////////////
