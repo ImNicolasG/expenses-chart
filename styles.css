@@ -98,6 +98,8 @@ p {
     border-radius: 5px;
     height: 200px;
     position: relative;
+    max-height: 200px;
+    justify-content: center;
 }
 
 
@@ -108,12 +110,16 @@ p {
     visibility: hidden;
     background-color: hsl(25, 47%, 15%);
     color: #fff;
+    width:fit-content;
     text-align: center;
-    padding: 5px 0;
+    padding: 5px 5px;
     border-radius: 6px;
-    position: relative;
+    position:relative;
     bottom: 30px;
-  
+    /* center tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    /* */
     /* Fade in tooltip */
     opacity: 0;
     transition: opacity 0.3s;

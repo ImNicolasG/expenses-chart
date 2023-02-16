@@ -33,7 +33,7 @@ const data = [
     },
     {
       "day": "wed",
-      "amount": 52.36
+      "amount": 352.36
     },
     {
       "day": "thu",
